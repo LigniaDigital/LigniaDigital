@@ -57,29 +57,42 @@ footer {
 .portfolio-item {
     background-color: #f9f9f9;
     border: 1px solid #ddd;
-    border-radius: 8px;
+    border-radius: 15px; /* More rounded corners */
     padding: 15px;
     text-align: center;
     box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    width: 180px; /* Fixed width for square shape */
+    height: 180px; /* Fixed height for square shape */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px; /* Space between item and subtitle */
 }
 
 .portfolio-item img {
-    max-width: 100%;
+    max-width: 100px; /* Adjust image size within the square container */
     height: auto;
     border-radius: 4px;
-    margin-bottom: 10px;
+    margin-bottom: 0; /* Remove bottom margin from image */
 }
 
 .portfolio-item h3 {
-    margin: 0;
+    margin-top: 5px; /* Space between image and subtitle */
     color: #333;
 }
 
 .portfolio-item a {
     text-decoration: none;
     color: inherit;
+    display: block; /* Make the link a block element to contain the image */
 }
 
 .portfolio-item a:hover {
-    text-decoration: underline;
+    text-decoration: none; /* Remove underline on hover for the image link */
+}
+
+.portfolio-item + h3 {
+    margin-top: 5px; /* Adjust margin for subtitle outside the box */
+    text-align: center;
 }
