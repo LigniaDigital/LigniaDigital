@@ -87,3 +87,64 @@ footer {
     color: #333;
     font-size: 0.9em;
 }
+
+.tabs {
+    display: flex;
+    border-bottom: 2px solid #ddd;
+    margin-bottom: 20px;
+}
+
+.tab-button {
+    padding: 10px 20px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    color: #666;
+    border-bottom: 2px solid transparent;
+    margin-bottom: -2px;
+    transition: all 0.3s ease;
+}
+
+.tab-button:hover {
+    color: #333;
+}
+
+.tab-button.active {
+    color: #333;
+    border-bottom: 2px solid #333;
+}
+
+.tab-content {
+    display: none;
+}
+
+.tab-content.active {
+    display: block;
+}
+
+.tab-content h1 {
+    font-size: 1.8em;
+    margin-bottom: 4px;
+}
+
+.tab-content h2 {
+    font-size: 1.15em;
+    margin-top: 32px;
+    margin-bottom: 6px;
+}
+
+.tab-content p {
+    margin: 8px 0;
+    line-height: 1.7;
+}
+
+.tab-content .updated {
+    color: #888;
+    font-size: 0.9em;
+    margin-bottom: 32px;
+}
+
+.tab-content a {
+    color: #1a6fca;
+}
