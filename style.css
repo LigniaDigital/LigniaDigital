@@ -37,6 +37,21 @@ main {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
+main h1 {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+}
+
+main h1 img {
+    width: 48px;
+    height: 48px;
+    object-fit: contain;
+    border-radius: 12px;
+}
+
 footer {
     text-align: center;
     padding: 20px;
@@ -92,6 +107,7 @@ footer {
     display: flex;
     border-bottom: 2px solid #ddd;
     margin-bottom: 20px;
+    justify-content: center;
 }
 
 .tab-button {
@@ -100,7 +116,7 @@ footer {
     border: none;
     cursor: pointer;
     font-size: 16px;
-    color: #666;
+    color: #000;
     border-bottom: 2px solid transparent;
     margin-bottom: -2px;
     transition: all 0.3s ease;
@@ -112,7 +128,18 @@ footer {
 
 .tab-button.active {
     color: #333;
+    font-weight: 600;
     border-bottom: 2px solid #333;
+}
+
+.app-spf-pro .tab-button.active {
+    color: #1a6fca;
+    border-bottom: 2px solid #1a6fca;
+}
+
+.app-site-visit .tab-button.active {
+    color: #F26B21;
+    border-bottom: 2px solid #F26B21;
 }
 
 .tab-content {
@@ -121,11 +148,6 @@ footer {
 
 .tab-content.active {
     display: block;
-}
-
-.tab-content h1 {
-    font-size: 1.8em;
-    margin-bottom: 4px;
 }
 
 .tab-content h2 {
@@ -147,4 +169,21 @@ footer {
 
 .tab-content a {
     color: #1a6fca;
+}
+
+/* Brand colors per app - applied to content headings/links only */
+.app-spf-pro .tab-content h2 {
+    color: #1a6fca;
+}
+
+.app-spf-pro .tab-content a {
+    color: #1a6fca;
+}
+
+.app-site-visit .tab-content h2 {
+    color: #F26B21;
+}
+
+.app-site-visit .tab-content a {
+    color: #F26B21;
 }
